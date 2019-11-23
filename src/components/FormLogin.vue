@@ -30,7 +30,14 @@ export default {
   width: 50vw;
   padding: 50px;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, .5);
-  border-radius: 30px;
+  background-color: white;
+}
+
+.container label {
+  color: #393939
+}
+
+.container input {
+  border-color: #393939;
 }
 </style>
