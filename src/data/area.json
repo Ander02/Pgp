@@ -1,0 +1,29 @@
+{
+    "Area": [
+        {
+            "title": "Projetos e metas",
+            "currentQuestions": 10,
+            "totalQuestions": 10
+        }, 
+        {
+            "title": "Produtividade",
+            "currentQuestions": 5,
+            "totalQuestions": 10
+        }, 
+        {
+            "title": "Trabalho em equipe",
+            "currentQuestions": 0,
+            "totalQuestions": 10
+        }, 
+        {
+            "title": "Liderança",
+            "currentQuestions": 0,
+            "totalQuestions": 10
+        }, 
+        {
+            "title": "Análise e pesquisa",
+            "currentQuestions": 0,
+            "totalQuestions": 10
+        }
+    ]
+}

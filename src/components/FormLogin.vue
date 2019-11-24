@@ -8,7 +8,7 @@
         <label>Senha</label>
         <md-input v-model="password" type="password"></md-input>
     </md-field>
-    <md-button class="md-raised md-primary">Entrar</md-button>
+    <md-button v-on:click="getHome" class="md-raised md-primary">Entrar</md-button>
 </div>
 </template>
 
@@ -19,7 +19,12 @@ export default {
   data: () => ({
     'user' : null,
     'password': null
-  })
+  }),
+  methods: {
+    getHome() {
+      this.$router.push('home');
+    }
+  }
 }
 </script>
 

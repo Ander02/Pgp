@@ -1,13 +1,12 @@
 <template>
-  <div>
-    <md-card md-with-hover>
+  <div class="container-cards">
+    <md-card md-with-hover v-bind:key="item.title"  v-for="item in areas">
       <md-ripple>
         <md-card-header>
-          <div class="md-title">Área 01</div>
-          <div class="md-subhead">Essa área é sobre blablabla</div>
+          <h3 class="md-title">{{item.title}}</h3>
         </md-card-header>
 
-        <md-card-content>0/X respondidas</md-card-content>
+        <md-card-content>{{item.currentQuestions}} / {{item.totalQuestions}}</md-card-content>
 
         <md-card-actions>
           <md-button>Action 01</md-button>
@@ -21,5 +20,10 @@
 </style>
 
 <script>
-export default {};
+
+export default {
+  data() {
+    return {"areas": this.$store.state.areas}
+  }
+};
 </script>
